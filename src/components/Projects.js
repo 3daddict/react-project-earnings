@@ -18,12 +18,14 @@ class Projects extends Component {
     }
 
     render() {
-        console.log('State: ', this.state);
-        return(
-            <div>
-                <h1 className="text-center">Projects Page</h1>
+        const projectElements = this.state.projects.map((item, index) => {
+            return <li key={item._id}>{item.projectName}</li>
+        });
 
-            </div>
+        return(
+            <ul>
+                {projectElements}
+            </ul>
         )
     }
 }
