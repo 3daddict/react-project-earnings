@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Example extends React.Component {
+export default class BootNav extends React.Component {
   render() {
     return (
       <div>
